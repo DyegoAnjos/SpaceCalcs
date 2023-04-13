@@ -3,7 +3,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/DyegoAnjos/SpaceCalcs?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/DyegoAnjos/SpaceCalcs?style=for-the-badge)
 
-<img src="/imgs/readme/CapaProjeto.svg" alt="exemplo imagem">
+<img src="/imgs/ReadMe/CapaProjeto.svg" alt="exemplo imagem">
 
 > Uma calculadora espacial usando HTML, CSS e JS
 

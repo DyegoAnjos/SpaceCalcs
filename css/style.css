@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
 /*Reset de CSS:*/
 *, *::before, *::after{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
 }
 
 body{
     width: 100vw;
     height: 100vh;
     
-    background-color: #000000;
+    background-color: #1D1135;
+    
 
 
     display: flex;
@@ -20,15 +24,32 @@ body{
     justify-content: center;
 }
 
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+#astroCat{
+    width: 40%;
+    min-width: 500px;
+}
+
 form{
-    width: 500px;
-    height: 600px;
+    max-width: 500px;
+    max-height: 700px;
 
     
-    background-color: #ffff00;
-    color: #000000;
-    border-radius: 20px;
+    background-color: #772A08;
+    box-shadow: inset #FCA311 -7px -11px 0px 3px;
     
+    border-radius: 20px;
+    padding: 2rem;
+    
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -36,94 +57,154 @@ form{
 }
 
 h1{
-    border-bottom: 3px solid  #000000;
-    font-size: 50px;
+    border-bottom: 3px solid  #FCA311;
+    color: #FCA311;
+    font-size: 4rem;
+}
+
+.caixas{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.inputCase{
+    background-image: url(../imgs/boxInput.svg);
+    max-height: 96px;
+    max-width: 187px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 input{
-    width: 200px;
-    height: 100px;
+    background: none;
+    border: none;
+    height: 96px;
+    width: 187px;
 
-    background-color: #000000;
-    color: #ffff00;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    
-    font-size: 40px;
+    font-size: 2rem;
     text-align: center;
+    color: #1D1135;
 }
 
 ::placeholder{
-    color: #ffff00;
-    font-size: 30px;
+    color: #1D1135;
+    font-size: 2rem;
+}
+
+.operacoes{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.button{
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    width: 105px;
+    
+    border-radius: 50px;
+
+    background-image: url(../imgs/button.svg);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button{
-    width: 100px;
-    height: 100px;
-
+    background: none;
+    border: none;
+    width: 105px;
+    height: 105px;
+    border-radius: 50px;
     
-    background-color: #000000;
-    color: #ffff00;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    
-    font-size: 35px;
+    font-size: 3.5rem;
+    text-align: center;
     cursor: pointer;
+
+    color: #1D1135;
     
-}
-
-button:hover{
-    background-color: #ffff00;
-    color: #000000;
-
-    transition: .5s;
 }
 
 p{
-    width: 200px;
+    background-image: url(../imgs/boxInputExit.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
 
-    background-color: #000000;
-    color: #ffff00;
-    border: 2px solid #000000;
+    width: 401px;
+    height: 96px;
+
+    
+    color: #1D1135;
+    
     border-radius: 10px;
 
     font-size: 40px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 .social{
     display: flex;
-    gap: 10px;
+    gap: 2rem;
 }
 
 .socialicon{
-    width: 50px;
-    height: 50px;
+    width: 100px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 1080px){
+    main{
+        margin: none;
+    }
     form{
+        max-width: none;
+        max-height: none;
         width: 100%;
-        height: 100%;
-
-        border-radius: 0px;
+        
+        padding: 1rem;
     }
-
+    
     h1{
-        font-size: 30px;
-        text-align: center;
+        font-size: 3rem;
     }
 
-    .caixas, .operacoes{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .operacoes{
+        width: 100%;
     }
 
-    button{
-        font-size: 100%;
-        width: 50px;
-        height: 50px;
+    .button{
+        margin: 1rem;
     }
+
+   .caixas{
+    flex-direction: column;
+   }  
+
+    #astroCat{
+        display: none;
+    }
+
+    p{
+        width: 300px;
+    }
+
+    .socialicon{
+        width: 60px;
+    }
+    
 }

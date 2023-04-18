@@ -9,10 +9,10 @@
 
 ## 💻 Habilidades no Projeto
 
-<img src="/imgs/ReadMe/Html.svg" alt="Habilidade Imagem" style="width: 80px;">
-<img src="/imgs/ReadMe/Css.svg" alt="Habilidade Imagem" style="width: 80px;">
-<img src="/imgs/ReadMe/Js.svg" alt="Habilidade Imagem" style="width: 80px;">
-<img src="/imgs/ReadMe/Responsivo.svg" alt="Habilidade Imagem" style="width: 80px;">
+<img src="/imgs/ReadMe/Html.svg" alt="Habilidade Imagem" style="width: 10%;">
+<img src="/imgs/ReadMe/Css.svg" alt="Habilidade Imagem" style="width: 10%;">
+<img src="/imgs/ReadMe/Js.svg" alt="Habilidade Imagem" style="width: 10%;">
+<img src="/imgs/ReadMe/Responsivo.svg" alt="Habilidade Imagem" style="width: 10%;">
 
 ## 🚀 Link para o Site
 

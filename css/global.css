@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+/*Reset de CSS:*/
+*, *::before, *::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+}
+
+:root{
+    --Azul: #1D1135;
+    --Marrom: #772A08;
+    --Amarelo: #FCA311;
+}

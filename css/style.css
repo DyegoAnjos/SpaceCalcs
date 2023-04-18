@@ -1,22 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
-
-/*Reset de CSS:*/
-*, *::before, *::after{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 700;
-}
-
 body{
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
     
-    background-color: #1D1135;
+    background-color: var(--Azul);
     
-
 
     display: flex;
     flex-direction: column;
@@ -33,18 +20,13 @@ main{
     margin: 2rem;
 }
 
-#astroCat{
-    width: 40%;
-    min-width: 500px;
-}
-
 form{
     max-width: 500px;
     max-height: 700px;
 
     
-    background-color: #772A08;
-    box-shadow: inset #FCA311 -7px -11px 0px 3px;
+    background-color: var(--Marrom);
+    box-shadow: inset var(--Amarelo) -7px -11px 0px 3px;
     
     border-radius: 20px;
     padding: 2rem;
@@ -57,8 +39,8 @@ form{
 }
 
 h1{
-    border-bottom: 3px solid  #FCA311;
-    color: #FCA311;
+    border-bottom: 3px solid  var(--Amarelo);
+    color: var(--Amarelo);
     font-size: 4rem;
 }
 
@@ -87,11 +69,11 @@ input{
 
     font-size: 2rem;
     text-align: center;
-    color: #1D1135;
+    color: var(--Azul);
 }
 
 ::placeholder{
-    color: #1D1135;
+    color: var(--Azul);
     font-size: 2rem;
 }
 
@@ -109,7 +91,7 @@ input{
     background-repeat: no-repeat;
     background-position: center center;
 
-    width: 105px;
+    width: 40%;
     
     border-radius: 50px;
 
@@ -132,7 +114,7 @@ button{
     text-align: center;
     cursor: pointer;
 
-    color: #1D1135;
+    color: var(--Azul);
     
 }
 
@@ -145,7 +127,7 @@ p{
     height: 96px;
 
     
-    color: #1D1135;
+    color: var(--Azul);
     
     border-radius: 10px;
 
@@ -156,27 +138,72 @@ p{
     justify-content: center;
 }
 
-
-
-.social{
-    display: flex;
-    gap: 2rem;
+#astroCat{
+    width: 40%;
+    min-width: 500px;
 }
 
-.socialicon{
-    width: 100px;
+#Estrelas, #Planeta, #Gato, #Foguete{
+    animation-name: animacaoMovimento;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#Estrelas{
+    animation-duration: 6s;
+}
+
+#Planeta{
+    animation-duration: 5s;
+}
+
+#Gato, #Foguete{
+    animation-duration: 3s;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialIcon{
+    width: 40%;
+}
+
+@keyframes animacaoMovimento{
+    0%{
+        transform: translateY(10%);
+    }
+
+    50%{
+        transform: translateY(0%);
+    }
+
+    100%{
+        transform: translateY(10%);
+    }
 }
 
 @media (max-width: 1080px){
     main{
         margin: none;
+        gap: 0rem;
     }
     form{
         max-width: none;
         max-height: none;
         width: 100%;
         
-        padding: 1rem;
+        /* padding: 1rem; */
     }
     
     h1{
@@ -189,6 +216,11 @@ p{
 
     .button{
         margin: 1rem;
+        width: 35%;
+    }
+
+    button{
+        font-size: 3rem;
     }
 
    .caixas{
@@ -200,11 +232,11 @@ p{
     }
 
     p{
-        width: 300px;
+        width: 60%;
+        font-size: 1.5rem;
     }
 
-    .socialicon{
-        width: 60px;
-    }
+    
     
 }
+

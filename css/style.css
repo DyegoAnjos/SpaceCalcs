@@ -115,7 +115,6 @@ button{
     cursor: pointer;
 
     color: var(--Azul);
-    
 }
 
 p{
@@ -216,11 +215,11 @@ footer a{
 
     .button{
         margin: 1rem;
-        width: 35%;
+        width: 30%;
     }
 
     button{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
    .caixas{
@@ -235,8 +234,4 @@ footer a{
         width: 60%;
         font-size: 1.5rem;
     }
-
-    
-    
 }
-
